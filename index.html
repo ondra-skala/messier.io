@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Messier Quiz</title>
+    <title>Document</title>
     <link rel="icon" href="https://cdn.icon-icons.com/icons2/2613/PNG/512/astronomy_saturn_galaxy_planet_space_system_universe_icon_156874.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,13 +20,11 @@
 <p>Zadávejte čísla ve tvaru m+číslo - m13,m57,...</p>
 
 <div class="hledani">
-    <input placeholder=" " id="numb">
+    <input placeholder=" " name="numb" id="numb">
     <button class="potvrdit button-19" type="button" onclick="check()">Potrvdit</button>
-    <button class="button-19" onclick="myFunction()">Start/Skip</button>
+    <button class="button-19" onclick="myFunction()">Skip</button>
     <p class="yesno" id="demo"></p>
 </div>
-
-
 
 <script>
     document.onkeydown=function(evt){
@@ -42,8 +40,16 @@
 <img src="" alt="">
 
 
-    <script src="javascript.js"></script>
+<script src="javascript.js"></script>
 
+<br>
+
+<h2 id="smazat1">Vyberte obtížnost:</h2>
+
+<br>
+
+<button onclick="FunEasy()" id="smazat2" class="tlacitkos button-19">Jednoduché</button>
+<button onclick="FunHard()" id="smazat3" class="button-20">Obtížné</button>
 
 </body>
 </html>

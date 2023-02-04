@@ -8,13 +8,7 @@ img{
     border-radius: 16px;
 }
 
-.hledani{
-    margin-bottom: 4%;
-}
 
-.potvrdit{
-    margin-bottom: 2%;
-}
 
 input{
     border-radius: 16px;
@@ -24,8 +18,9 @@ input{
 }
 
 .yesno{
-    margin-top: 5%;
     font-size: 50px;
+    height: auto;
+    width: auto;
 }
 
 /* CSS */
@@ -85,6 +80,74 @@ input{
 }
 
 .button-19:disabled {
+  cursor: auto;
+}
+
+.tlacitkos:after{
+  background-color: #7cdb7c;
+}
+
+.tlacitkos{
+  background-color: #5da15d;
+}
+
+
+.button-20 {
+  appearance: button;
+  background-color: #823b3a;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-20:after {
+  background-clip: padding-box;
+  background-color: #f66967;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-20:main,
+.button-20:focus {
+  user-select: auto;
+}
+
+.button-20:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-20:disabled {
   cursor: auto;
 }
 
