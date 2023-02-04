@@ -47,7 +47,7 @@ const imageArray = [["m1","https://www.nasa.gov/sites/default/files/styles/full_
 ["m30","https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Messier_30_Hubble_WikiSky.jpg/1024px-Messier_30_Hubble_WikiSky.jpg"],
 ["m7","https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/The_star_cluster_Messier_7.jpg/1024px-The_star_cluster_Messier_7.jpg"],
 ["m58","https://upload.wikimedia.org/wikipedia/commons/b/b0/M58s_%28visible%29.jpg"],
-["m17","https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/The_star_formation_region_Messier_17.jpg/1024px-The_star_formation_region_Messier_17.jpg"]
+["m17","https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/The_star_formation_region_Messier_17.jpg/1024px-The_star_formation_region_Messier_17.jpg"],
 ["m31","https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg/1200px-Andromeda_Galaxy_%28with_h-alpha%29.jpg"],
 ["m33","https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/heic1901a.jpg?itok=YLJUZyay"],
 ["m42","http://cs.astronomy.com/cfs-file.ashx/__key/telligent-evolution-components-attachments/13-59-00-00-00-48-84-46/m42_2D00_HLRGB_5F00_def.jpg"],
@@ -86,15 +86,15 @@ function generateRandomPicture(array){
 }
 
 function myFunction() {
+  if (stav == 0){
+    alert("Vyberte obtížnost!");
+  }
   if (stav == 1){
     FunEasy();
   }
   if (stav == 2){
     FunHard();
   }  
-  if (stav == 0){
-    alert("Prosím vyberte obtížnost!");
-  }
 }
 
 function FunEasy(){
@@ -132,7 +132,7 @@ function FunHard(){
 
 function check(){
   if (stav == 0){
-    alert("Prosím vyberte obtížnost!");
+    alert("Vyberte obtížnost!");
   }
   let text;
   let x = document.getElementById("numb").value;
@@ -149,12 +149,16 @@ function check(){
   frm.value = "m";
 }
 
+
+
 function idk(){
+ 
+  
   if (stav == 0){
-    alert("Prosím vyberte obtížnost!");
+    alert("Vyberte obtížnost!");
   }
+
   else{
     alert(pozice[0]);
   }
-  
 }
